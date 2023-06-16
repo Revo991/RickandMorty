@@ -6,7 +6,7 @@ import ListaPersonajes from './ListaPersonajes'
 
 export default function Header() {
   return (
-    <BrowserRouter>
+    <BrowserRouter> hola
     <Routes>
         <Route path='/ListaPersonajes' element={<ListaPersonajes/>}/>
     </Routes>
