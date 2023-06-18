@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
-// eslint-disable-next-line no-unused-vars
-import CardPersonajes from './CardPersonajes';
 import axios from 'axios';
+
+import CardPersonajes from './CardPersonajes';
 
 export default function ListaPersonajes() {
   const [personajes, setPersonajes] = useState([]);
@@ -40,18 +40,17 @@ export default function ListaPersonajes() {
     const filteredPersonajes = personajesOriginales.filter((personaje) =>
       personaje.name.toLowerCase().includes(filtro.toLowerCase()) ||
       String(personaje.id) === filtro ||
-      String(personaje.species) === filtro 
-      // eslint-disable-next-line no-undef
-      
+      String(personaje.species) === filtro
     );
     setPersonajes(filteredPersonajes);
   };
-  
 
   const resetPersonajes = () => {
     setFiltro('');
     setPersonajes(personajesOriginales);
   };
+
+  const mostrarSinResultados = personajes.length === 0 && filtro !== '';
 
   return (
     <div>
@@ -59,7 +58,6 @@ export default function ListaPersonajes() {
         <input type="text" value={filtro} onChange={change} placeholder="Buscar personaje" />
         <button onClick={searchPersonaje}>Buscar</button>
         <button onClick={resetPersonajes}>Restablecer</button>
-
       </div>
       <div className="row justify-content-center">
         {personajes.map((personaje) => (
@@ -68,7 +66,7 @@ export default function ListaPersonajes() {
               id={personaje.id}
               name={personaje.name}
               type={personaje.type}
-              specie={personaje.species}
+              species={personaje.species}
               image={personaje.image}
               status={personaje.status}
               gender={personaje.gender}
@@ -79,6 +77,7 @@ export default function ListaPersonajes() {
           </div>
         ))}
       </div>
+      {mostrarSinResultados && <div>No se encontraron resultados.</div>}
     </div>
   );
 }
