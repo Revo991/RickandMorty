@@ -8,12 +8,14 @@ h2{
 .contenedor-img{
     text-align: center;
     transition: all .5s;
-}
-
-.contenedor-img:hover{
+     /* ajusta la altura máxima según tus necesidades */
     
 }
 
+card-content {
+    max-height: 310px; /* ajusta la altura máxima según tus necesidades */
+   
+  }
 .contenedor-img img{
     max-width: 200px;
     filter: drop-shadow(2px 4px 12px rgb(15, 231, 7));
@@ -31,3 +33,15 @@ td{
 .title{
     font-weight: bold;
 }
+
+.card-text{
+    font-size: small;
+}
+.custom-card {
+    height: 100%; /* Establece una altura fija para todas las tarjetas */
+  }
+
+  .titulo{
+    font-size:  15px;;
+    font-weight: bold; 
+  }
