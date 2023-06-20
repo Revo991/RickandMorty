@@ -50,7 +50,7 @@ export default function ListaPersonajes() {
         String(personaje.location.name) === filtro;
 
       const estadoMatch =
-        estadoFiltro === 'Unknown' ? personaje.status === 'unknown' : personaje.status === estadoFiltro;
+        estadoFiltro === '' ? true : estadoFiltro === 'Unknown' ? personaje.status === 'unknown' : personaje.status === estadoFiltro;
 
       return nombreMatch && estadoMatch;
     });
