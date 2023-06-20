@@ -40,7 +40,6 @@ export default function ListaPersonajes() {
 
   const handleEstadoChange = (e) => {
     setEstadoFiltro(e.target.value);
-    
   };
 
   const searchPersonaje = () => {
@@ -48,29 +47,17 @@ export default function ListaPersonajes() {
       const nombreMatch =
         personaje.name.toLowerCase().includes(filtro.toLowerCase()) ||
         String(personaje.id) === filtro ||
-        String(personaje.species) === filtro;
+        String(personaje.species) === filtro ||
+        String(personaje.location.name) === filtro;
 
-      const estadoMatch = estadoFiltro ? personaje.status === estadoFiltro : true;
+      const estadoMatch =
+        estadoFiltro === 'Unknown' ? personaje.status === 'unknown' : personaje.status === estadoFiltro;
 
       return nombreMatch && estadoMatch;
     });
 
     if (filtro === '' && estadoFiltro === '') {
       setPersonajes(personajesOriginales);
-    } else if (filtro !== '' && estadoFiltro === 'Dead') {
-      const personajeEncontrado = personajesOriginales.find((personaje) => personaje.id.toString() === filtro);
-      if (personajeEncontrado && personajeEncontrado.status === 'Alive') {
-        setPersonajes([personajeEncontrado]);
-      } else {
-        setPersonajes(filteredPersonajes);
-      }
-    } else if (filtro !== '' && estadoFiltro === 'Alive') {
-      const personajeEncontrado = personajesOriginales.find((personaje) => personaje.id.toString() === filtro);
-      if (personajeEncontrado && personajeEncontrado.status === 'Dead') {
-        setPersonajes([personajeEncontrado]);
-      } else {
-        setPersonajes(filteredPersonajes);
-      }
     } else {
       setPersonajes(filteredPersonajes);
     }
@@ -92,6 +79,7 @@ export default function ListaPersonajes() {
           <option value="">Todos</option>
           <option value="Alive">Vivos</option>
           <option value="Dead">Muertos</option>
+          <option value="Unknown">Desconocido</option>
         </select>
       </div>
 
