@@ -7,6 +7,7 @@ import CardPersonajes from './CardPersonajes';
 export default function ListaPersonajes() {
   const [personajes, setPersonajes] = useState([]);
   const [filtro, setFiltro] = useState('');
+  const [estadoFiltro, setEstadoFiltro] = useState('');
   const [personajesOriginales, setPersonajesOriginales] = useState([]);
 
   const getPersonajes = async () => {
@@ -32,21 +33,51 @@ export default function ListaPersonajes() {
     getPersonajes();
   }, []);
 
-  const change = (e) => {
+  const handleNombreChange = (e) => {
     setFiltro(e.target.value);
   };
 
+  const handleEstadoChange = (e) => {
+    setEstadoFiltro(e.target.value);
+    
+  };
+
   const searchPersonaje = () => {
-    const filteredPersonajes = personajesOriginales.filter((personaje) =>
-      personaje.name.toLowerCase().includes(filtro.toLowerCase()) ||
-      String(personaje.id) === filtro ||
-      String(personaje.species) === filtro
-    );
-    setPersonajes(filteredPersonajes);
+    const filteredPersonajes = personajesOriginales.filter((personaje) => {
+      const nombreMatch =
+        personaje.name.toLowerCase().includes(filtro.toLowerCase()) ||
+        String(personaje.id) === filtro ||
+        String(personaje.species) === filtro;
+
+      const estadoMatch = estadoFiltro ? personaje.status === estadoFiltro : true;
+
+      return nombreMatch && estadoMatch;
+    });
+
+    if (filtro === '' && estadoFiltro === '') {
+      setPersonajes(personajesOriginales);
+    } else if (filtro !== '' && estadoFiltro === 'Dead') {
+      const personajeEncontrado = personajesOriginales.find((personaje) => personaje.id.toString() === filtro);
+      if (personajeEncontrado && personajeEncontrado.status === 'Alive') {
+        setPersonajes([personajeEncontrado]);
+      } else {
+        setPersonajes(filteredPersonajes);
+      }
+    } else if (filtro !== '' && estadoFiltro === 'Alive') {
+      const personajeEncontrado = personajesOriginales.find((personaje) => personaje.id.toString() === filtro);
+      if (personajeEncontrado && personajeEncontrado.status === 'Dead') {
+        setPersonajes([personajeEncontrado]);
+      } else {
+        setPersonajes(filteredPersonajes);
+      }
+    } else {
+      setPersonajes(filteredPersonajes);
+    }
   };
 
   const resetPersonajes = () => {
     setFiltro('');
+    setEstadoFiltro('');
     setPersonajes(personajesOriginales);
   };
 
@@ -55,7 +86,16 @@ export default function ListaPersonajes() {
   return (
     <div>
       <div>
-        <input type="text" value={filtro} onChange={change} placeholder="Buscar personaje" />
+        <label htmlFor="estadoFiltro">Estado:</label>
+        <select id="estadoFiltro" value={estadoFiltro} onChange={handleEstadoChange}>
+          <option value="">Todos</option>
+          <option value="Alive">Vivos</option>
+          <option value="Dead">Muertos</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="text" value={filtro} onChange={handleNombreChange} placeholder="Buscar personaje" />
         <button onClick={searchPersonaje}>Buscar</button>
         <button onClick={resetPersonajes}>Restablecer</button>
       </div>
@@ -66,7 +106,7 @@ export default function ListaPersonajes() {
               id={personaje.id}
               name={personaje.name}
               type={personaje.type}
-              species={personaje.species}
+              specie={personaje.species}
               image={personaje.image}
               status={personaje.status}
               gender={personaje.gender}
