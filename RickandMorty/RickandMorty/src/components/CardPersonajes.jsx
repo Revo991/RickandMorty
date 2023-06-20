@@ -1,21 +1,27 @@
-<<<<<<< HEAD
-/* eslint-disable react/prop-types */
-=======
 /* eslint-disable react/no-unescaped-entities */
->>>>>>> Rama_Rafael
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
 export default function CardPersonajes({
+  // eslint-disable-next-line react/prop-types
   id,
+  // eslint-disable-next-line react/prop-types
   origin,
+  // eslint-disable-next-line react/prop-types
   image,
+  // eslint-disable-next-line react/prop-types
   name,
+  // eslint-disable-next-line react/prop-types
   specie,
+  // eslint-disable-next-line react/prop-types
   status,
+  // eslint-disable-next-line react/prop-types
   gender,
+  // eslint-disable-next-line react/prop-types
   location,
+  // eslint-disable-next-line react/prop-types
   episodes,
+  // eslint-disable-next-line react/prop-types, no-unused-vars
   type
 }) {
   const getStatusColor = () => {
