@@ -34,7 +34,7 @@ export default function CardPersonajes({
   };
 
   return (
-    <div className="container my-5">
+    <div className="container my-3">
       <div className="row">
         <div className="col-lg-4 col-md-6">
           <div className="card mb-4 h-100 custom-card" style={{ width: '23rem' }}>
