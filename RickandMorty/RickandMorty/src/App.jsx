@@ -4,7 +4,8 @@
 
 import './assets/css/style.css'
 import Header from './components/Header';
-import ListaPersonajes from './components/ListaPersonajes';
+import Inicio from './components/Inicio';
+
 
 
 
@@ -13,9 +14,8 @@ function App() {
   return (
     <>
     <Header/>
-      <div className='container'>
-        <ListaPersonajes/>
-        
+      <div>
+        <Inicio/>
       </div>
     </>
   )
