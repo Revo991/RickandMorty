@@ -33,46 +33,46 @@ export default function Inicio() {
                 <br /> A pesar de estar muy apegados, Rick y su nieto experimentan momentos en los que Summer, hermana de Morty, se une en ocasiones a las pintorescas aventuras provocadas por Rick.</p>
             </section>
             <section className="py-5">
-  <div id="carouselExampleCaptions" className="carousel slide">
+            <div id="carouselExampleCaptions" className="carousel slide">
     
-    <div className="carousel-inner">
-      <div className="carousel-item active">
-        <div className="row g-0 text-center">
-          <div className="col-sm-5 col-md-6">
+            <div className="carousel-inner">
+            <div className="carousel-item active">
+            <div className="row g-0 text-center">
+            <div className="col-sm-5 col-md-6">
             <img src={rick} className="w-50" alt="rick" />
-          </div>
-          <div className="col-sm-7 col-md-5 text-white">
+            </div>
+            <div className="col-sm-7 col-md-5 text-white">
             <h5>RICK SANCHEZ</h5>
             <div className="justified-text">
-              <p className="">Es un viejo científico que acostumbra a hablar de manera vulgar y entre eructos, y la mayoría de las veces tiene un rastro de saliva en la boca. Es padre de Beth Sánchez y es el abuelo materno de Summer y Morty. Es un hombre que ha pasado gran parte de su vida viajando a través de diversas galaxias. Para él, la Tierra se llama Planeta Tierra del Universo C-137. Es irresponsable, asocial, chiflado, ambicioso y desconsiderado ante su propia familia, criticando en numerosas ocasiones a su yerno por ser un inútil. Suele llevar a Morty a sus aventuras para usarlo en sus viajes, llegando al punto de no distinguir el bien del mal.</p>
+            <p className="">Es un viejo científico que acostumbra a hablar de manera vulgar y entre eructos, y la mayoría de las veces tiene un rastro de saliva en la boca. Es padre de Beth Sánchez y es el abuelo materno de Summer y Morty. Es un hombre que ha pasado gran parte de su vida viajando a través de diversas galaxias. Para él, la Tierra se llama Planeta Tierra del Universo C-137. Es irresponsable, asocial, chiflado, ambicioso y desconsiderado ante su propia familia, criticando en numerosas ocasiones a su yerno por ser un inútil. Suele llevar a Morty a sus aventuras para usarlo en sus viajes, llegando al punto de no distinguir el bien del mal.</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <div className="row g-0 text-center">
-          <div className="col-sm-5 col-md-6">
+            </div>
+            </div>
+            </div>
+            <div className="carousel-item">
+            <div className="row g-0 text-center">
+            <div className="col-sm-5 col-md-6">
             <img src={morty} className="w-25" alt="morty" />
-          </div>
-          <div className="col-sm-7 col-md-5 text-white">
+            </div>
+            <div className="col-sm-7 col-md-5 text-white">
             <h5>MORTY SMITH</h5>
             <div className="justified-text">
-              <p className="">Es un chico de 14 años, nieto de Rick, quien lo usa frecuentemente en sus aventuras. Posee una inteligencia pobre, es de estatura baja para su edad y está enamorado de una compañera de escuela llamada Jessica. Al avanzar la serie, toma más valor a la hora de enfrentar situaciones peligrosas. Con su bajo nivel de inteligencia sirve como contrapunto a la de su abuelo Rick, lo cual hace que sea el compañero de aventuras ideal.</p>
+            <p className="">Es un chico de 14 años, nieto de Rick, quien lo usa frecuentemente en sus aventuras. Posee una inteligencia pobre, es de estatura baja para su edad y está enamorado de una compañera de escuela llamada Jessica. Al avanzar la serie, toma más valor a la hora de enfrentar situaciones peligrosas. Con su bajo nivel de inteligencia sirve como contrapunto a la de su abuelo Rick, lo cual hace que sea el compañero de aventuras ideal.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Previous</span>
-    </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span className="carousel-control-next-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
+            </div>
+            </div>
+            </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+            </button>
+            </div>
+            </section>
 
         <section>
         <div>
