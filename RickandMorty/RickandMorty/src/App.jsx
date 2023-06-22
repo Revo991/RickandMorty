@@ -14,6 +14,9 @@ function App() {
   return (
     <>
     <Header/>
+    <div>
+      <Inicio/>
+    </div>
     </>
   )
 }
