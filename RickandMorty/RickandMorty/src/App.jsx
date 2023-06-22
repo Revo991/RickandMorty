@@ -4,6 +4,7 @@
 
 import './assets/css/style.css'
 import Header from './components/Header';
+// eslint-disable-next-line no-unused-vars
 import Inicio from './components/Inicio';
 import ListaPersonajes from './components/ListaPersonajes';
 

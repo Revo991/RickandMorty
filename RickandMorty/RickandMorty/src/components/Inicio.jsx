@@ -9,8 +9,6 @@ import rickcarcel1 from '../assets/img/Rickcarcel1.jpg'
 import portal from '../assets/img/portal.png'
 
 
-
-
 export default function Inicio() {
     
     return (
@@ -22,7 +20,10 @@ export default function Inicio() {
             </div>
             <div className="col-4 botonstyle ">
                 <img className="w-100" src={logo} alt="logo"/>
-                <button className="btn btn-outline-info" type="submit">Personaje</button>
+                <button className="btn btn-outline-info" type="submit">  
+                    Personajes
+                </button>
+                
             </div>
             </div>
             </div>
