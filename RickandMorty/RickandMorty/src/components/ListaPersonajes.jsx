@@ -117,8 +117,10 @@ export default function ListaPersonajes() {
             />
           </div>
         ))}
+      </div >
+      <div>
+      {mostrarSinResultados && <div className='text-white p-4 '>No se encontraron resultados.</div>}
       </div>
-      {mostrarSinResultados && <div>No se encontraron resultados.</div>}
       </div>
     </div>
   );

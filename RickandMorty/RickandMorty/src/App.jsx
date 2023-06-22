@@ -9,18 +9,15 @@ import ListaPersonajes from './components/ListaPersonajes';
 
 
 
+
 function App() {
   
   return (
     <>
     <Header/>
-    <div>
-      <Inicio/>
-    </div>
       <div>
-        
+        <ListaPersonajes/>
       </div>
-
     </>
   )
 }
