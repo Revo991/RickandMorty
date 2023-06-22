@@ -34,14 +34,17 @@ export default function CardPersonajes({
   };
 
   return (
-    <div className="container my-3">
+    <div className="container my-4">
       <div className="row">
         <div className="col-lg-4 col-md-6">
-          <div className="card mb-4 h-100 custom-card" style={{ width: '23rem' }}>
-            <img src={image} className="card-img-top card-text" alt={name} />
+          <div className="card mb-4 fondo-card rounded-5 animacion" style={{ width: '23rem' }}>
+            <div className='m-3 text-center '>
+            <img src={image} className="w-75 border border-5 border-success rounded-circle" alt={name} />
+            </div>
             <div className="card-body card-text">
-              <h5 className="card-title titulo">{name}</h5>
+              <h5 className="fs-3 container">{name}</h5>
               <div className="card-content">
+                <div className='container m-3'>
                 <p className="card-text">
                   <strong>Id:</strong> {id}
                 </p>
@@ -58,7 +61,7 @@ export default function CardPersonajes({
                 <p className="card-text">
                   <strong>Gender:</strong> {gender}
                 </p>
-                <p className="card-text locacionn">
+                <p className="card-text">
                   <strong>Location:</strong> {location}
                 </p>
                 <p className="card-text">
@@ -67,6 +70,7 @@ export default function CardPersonajes({
                 <p className="card-text">
                   <strong>Type:</strong> {type}
                 </p>
+                </div>
               </div>
             </div>
           </div>

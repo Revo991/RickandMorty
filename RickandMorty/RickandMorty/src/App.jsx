@@ -5,7 +5,7 @@
 import './assets/css/style.css'
 import Header from './components/Header';
 import Inicio from './components/Inicio';
-
+import ListaPersonajes from './components/ListaPersonajes';
 
 
 
@@ -14,9 +14,13 @@ function App() {
   return (
     <>
     <Header/>
+    <div>
+      <Inicio/>
+    </div>
       <div>
-        <Inicio/>
+        
       </div>
+
     </>
   )
 }

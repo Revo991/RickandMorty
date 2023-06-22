@@ -2,8 +2,8 @@
 import axios from 'axios';
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
-
 import CardPersonajes from './CardPersonajes';
+import logo from '../assets/img/logo.png'
 
 export default function ListaPersonajes() {
   const [personajes, setPersonajes] = useState([]);
@@ -72,25 +72,37 @@ export default function ListaPersonajes() {
   const mostrarSinResultados = personajes.length === 0 && filtro !== '';
 
   return (
-    <div>
+    <div className="fondo">
+      <div className='container'>
+        <div className='d-flex justify-content-center'>
+          <img className='logo-psj' src={logo} alt="logo"/>
+        </div>
+      <div className='py-4'>
+        <h2 className='text-white fs-2 fw-semibold font-monospace'>Todos los personajes</h2>
+      </div>
+
       <div>
-        <label htmlFor="estadoFiltro">Estado:</label>
-        <select id="estadoFiltro" value={estadoFiltro} onChange={handleEstadoChange}>
+      <div className=' d-flex justify-content-around '>
+        <div>
+        <label className='text-white fs-4 font-monospace ' htmlFor="estadoFiltro">Estado:</label>
+        <select className='border border-success rounded-pill bg-success bg-opacity-60 text-white font-monospace' id="estadoFiltro" value={estadoFiltro} onChange={handleEstadoChange}>
           <option value="">Todos</option>
           <option value="Alive">Vivos</option>
           <option value="Dead">Muertos</option>
           <option value="Unknown">Desconocido</option>
         </select>
+        </div>
+        <div>
+        <input className='border rounded-pill bg-white font-monospace' type="text" value={filtro} onChange={handleNombreChange} placeholder="Buscar personaje" />
+        <button className="btn btn-outline-info rounded-pill ms-3"  onClick={searchPersonaje}>Buscar</button>
+        <button className="btn btn-outline-info rounded-pill ms-2" onClick={resetPersonajes}>Restablecer</button>
+      </div>  
+      </div>
       </div>
 
-      <div>
-        <input type="text" value={filtro} onChange={handleNombreChange} placeholder="Buscar personaje" />
-        <button onClick={searchPersonaje}>Buscar</button>
-        <button onClick={resetPersonajes}>Restablecer</button>
-      </div>
-      <div className="row justify-content-center">
+      <div className="row ">
         {personajes.map((personaje) => (
-          <div className="col-md-4" key={personaje.id}>
+          <div className="col-12 col-lg-4 col-sm-5 mb-5" key={personaje.id}>
             <CardPersonajes
               id={personaje.id}
               name={personaje.name}
@@ -107,6 +119,7 @@ export default function ListaPersonajes() {
         ))}
       </div>
       {mostrarSinResultados && <div>No se encontraron resultados.</div>}
+      </div>
     </div>
   );
 }

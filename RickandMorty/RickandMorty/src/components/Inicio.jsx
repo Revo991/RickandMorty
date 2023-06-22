@@ -14,7 +14,7 @@ export default function Inicio() {
     return (
             <div className="fondo">
             <div className="container text-center">
-            <div className="row g-1">
+            <div className="row">
             <div className="col-8">
                 <img src={rickandmorty} alt="rickandmortyportal"/>
             </div>

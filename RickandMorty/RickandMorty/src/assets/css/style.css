@@ -12,39 +12,80 @@ h2{
     
 }
 
-card-content {
-    max-height: 310px; /* ajusta la altura máxima según tus necesidades */
-   
+  .card-content{
+    background-color: #ffffff8e;
+    border-radius: 10%;
   }
-.contenedor-img img{
-    max-width: 200px;
-    filter: drop-shadow(2px 4px 12px rgb(15, 231, 7));
-}
-
-table, td{
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-td{
-    padding: 10px;
-}
-
-.title{
-    font-weight: bold;
-}
-
-.card-text{
-    font-size: small;
-}
-.custom-card {
-    height: 100%; /* Establece una altura fija para todas las tarjetas */
+  
+  
+  .contenedor-img img{
+      max-width: 200px;
+      filter: drop-shadow(2px 4px 12px rgb(15, 231, 7));
+  }
+  
+  table, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  
+  td{
+      padding: 10px;
+  }
+  
+  .title{
+      font-weight: bold;
+  }
+  
+  .card-text{
+  font-size: large;
   }
 
   .titulo{
     font-size:  15px;;
     font-weight: bold; 
   }
+
+  .logo-psj{
+    width: 18%;
+  }
+
+  .fondo-card{
+    background-image: url('../img/fondo-card.png');
+  }
+
+  .animacion{
+    transition: all 1s;
+  transform: perspective(1px) translateZ(0);
+  animation: show 0.5s 0s forwards, flutuate 2s 0.5s infinite;
+  }
+  @keyframes show {
+    0% {
+      transform: translateY(2000px);
+      
+    }
+
+    100% {
+      transform:  translateY(-16px);
+    }
+  }
+
+  @keyframes flutuate {
+  0% {
+    -webkit-transform: translateY(-16px);
+    transform: translateY(-16px);
+  }
+  50% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px) ;
+  }
+  100% {
+    -webkit-transform: translateY(-16px);
+    transform: translateY(-16px);
+  }
+  }
+
+
+  /*style de inicio.jsx */
 
   .fondo{
     background-image: url('../img/3.gif')
