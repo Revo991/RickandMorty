@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Inicio from './Inicio';
 import ListaPersonajes from './ListaPersonajes';
 import About from './About';
-import CardPersonajes from './CardPersonajes';
 
 export default function Header() {
   return (
@@ -43,11 +42,7 @@ export default function Header() {
               Acerca de
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/card-personaje" className="nav-link link">
-              Card
-            </Link>
-          </li>
+          
         </ul>
       </div>
     </div>
@@ -59,7 +54,7 @@ export default function Header() {
         <Route path="/" element={<Inicio />} />
         <Route path="/lista-personajes" element={<ListaPersonajes />} />
         <Route path="/about" element={<About />} />
-        <Route path="/card-personaje" element={<CardPersonajes />} />
+        
       </Routes>
     </Router>
   );
