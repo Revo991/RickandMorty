@@ -37,38 +37,39 @@ export default function CardPersonajes({
     <div className="container my-4">
       <div className="row">
         <div className="col-lg-4 col-md-6">
-          <div className="card mb-4 fondo-card rounded-5 animacion" style={{ width: '23rem' }}>
+          <div className="card mb-5 fondo-card rounded-5 animacion" style={{ width: '23rem' }}>
             <div className='m-3 text-center '>
             <img src={image} className="w-75 border border-5 border-success rounded-circle" alt={name} />
             </div>
             <div className="card-body card-text">
-              <h5 className="fs-3 container">{name}</h5>
+              <h5 className="fs-5 container fw-bold">{name}</h5>
               <div className="card-content">
                 <div className='container m-3'>
                 <p className="card-text">
                   <strong>Id:</strong> {id}
                 </p>
-                <p className="card-text ">
-                  <strong>Origin:</strong> {origin}
+                <p className="card-text fs-6">
+                  <strong className='fs-5'>Origin:</strong> <br/>{origin}
                 </p>
                 <p className="card-text">
-                  <strong>Specie:</strong> {specie}
+                  <strong className='fs-5'>Specie:</strong> {specie}
                 </p>
                 <p className="card-text">
-                  <strong>Status:</strong>{' '}
+                  <strong className='fs-5'>Status:</strong>{' '}
                   <span style={{ color: getStatusColor() }}>{status}</span>
                 </p>
                 <p className="card-text">
-                  <strong>Gender:</strong> {gender}
+                  <strong className='fs-5'>Gender:</strong> {gender}
                 </p>
-                <p className="card-text">
-                  <strong>Location:</strong> {location}
+                <p className="card-text fs-6">
+                  <strong className='fs-5'>Location:</strong> <br/>{location}
                 </p>
+                
                 <p className="card-text">
-                  <strong>Episodes:</strong> {episodes}
+                  <strong className='fs-5'>Episodes:</strong> {episodes}
                 </p>
-                <p className="card-text">
-                  <strong>Type:</strong> {type}
+                <p className="card-text fs-6">
+                  <strong className='fs-5'>Type:</strong>{type}
                 </p>
                 </div>
               </div>
