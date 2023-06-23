@@ -24,7 +24,7 @@ export default function Header() {
         </button>
 
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav font-monospace">
           <li className="nav-item fondo-nav">
             <Link to="/" className="nav-link link">
               Inicio
@@ -42,7 +42,7 @@ export default function Header() {
           </li>
         </ul>
         <div className='ms-auto'>
-        <ul className='navbar-nav'>
+        <ul className='navbar-nav font-monospace'>
         <li className='nav-item fondo-nav'>
           <Link to="/" className="nav-link link">
               Cerrar Sesion
