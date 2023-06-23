@@ -82,6 +82,18 @@ h2{
   }
   }
 
+  .fondo-nav{
+    margin: 5px;
+    background-color: #73D234;
+    border-radius: 30px ;
+    
+}
+.fondo-nav:hover{
+    background-color: hsla(0, 0%, 100%, 0.65);
+    
+    
+}
+
 
   /*style de inicio.jsx */
 

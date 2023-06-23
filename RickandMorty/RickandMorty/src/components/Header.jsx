@@ -8,12 +8,11 @@ import About from './About';
 export default function Header() {
   return (
     <Router>
-<header>
-  <nav className="navbar navbar-expand-lg">
+<header className='fondo'>
+  <nav className="navbar navbar-expand-lg p-4">
     <div className="container">
-      <div className="boton-container bg-white bg-opacity-50 m-2 border-boton">
         <button
-          className="navbar-toggler btn m-2"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -23,27 +22,34 @@ export default function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-      </div>
 
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
+        <ul className="navbar-nav">
+          <li className="nav-item fondo-nav">
             <Link to="/" className="nav-link link">
               Inicio
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item fondo-nav">
             <Link to="/lista-personajes" className="nav-link link">
               Personajes
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item fondo-nav">
             <Link to="/about" className="nav-link link">
-              Acerca de
+              Nosotros
             </Link>
           </li>
-          
         </ul>
+        <div className='ms-auto'>
+        <ul className='navbar-nav'>
+        <li className='nav-item fondo-nav'>
+          <Link to="/" className="nav-link link">
+              Cerrar Sesion
+            </Link>
+          </li>
+        </ul>
+        </div>
       </div>
     </div>
   </nav>
