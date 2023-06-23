@@ -91,15 +91,7 @@ export default function Inicio() {
         <div className="flex-fill">
             <img className="edit-photos" src={rickcarcel1} alt=""/>
         </div>
-        <div className="flex-fill">
-            <img className="edit-photos" src={rickcarcel1} alt=""/>
-        </div>
-        <div className="flex-fill">
-            <img className="edit-photos" src={rickcarcel1} alt=""/>
-        </div>
-        <div className="flex-fill">
-            <img className="edit-photos" src={rickcarcel1} alt=""/>
-        </div>
+        
         </div>
         <div className="text-center p-4">
             <button className="btn btn-outline-info" type="submit">Acerca de Nosotros</button>
