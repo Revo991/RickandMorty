@@ -6,8 +6,11 @@ import morty from '../assets/img/morty.png'
 import rickcarcel1 from '../assets/img/Rickcarcel1.jpg'
 import portal from '../assets/img/portal.png'
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 
 export default function Inicio() {
     
@@ -20,7 +23,14 @@ export default function Inicio() {
             </div>
             <div className="col-4 botonstyle ">
                 <img className="w-100" src={logo} alt="logo"/>
+<<<<<<< Updated upstream
                 <button className="btn btn-outline-info" type="submit">Personaje</button>
+=======
+                <button className="btn btn-outline-info" type="submit">  
+                    Personajes
+                </button>
+                
+>>>>>>> Stashed changes
             </div>
             </div>
             </div>

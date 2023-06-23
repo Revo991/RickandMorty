@@ -9,6 +9,7 @@ import ListaPersonajes from './ListaPersonajes'
 
 export default function Header() {
   return (
+<<<<<<< Updated upstream
     <BrowserRouter>
     <Routes>
         <Route path='/Inicio' element={<Inicio/>}/>
@@ -16,4 +17,63 @@ export default function Header() {
     </Routes>
     </BrowserRouter>
   )
+=======
+    <Router>
+<header className='fondo'>
+  <nav className="navbar navbar-expand-lg p-4">
+    <div className="container">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item fondo-nav">
+            <Link to="/" className="nav-link link">
+              Inicio
+            </Link>
+          </li>
+          <li className="nav-item fondo-nav">
+            <Link to="/lista-personajes" className="nav-link link">
+              Personajes
+            </Link>
+          </li>
+          <li className="nav-item fondo-nav">
+            <Link to="/about" className="nav-link link">
+              Nosotros
+            </Link>
+          </li>
+        </ul>
+        <div className='ms-auto'>
+        <ul className='navbar-nav'>
+        <li className='nav-item fondo-nav'>
+          <Link to="/" className="nav-link link">
+              Cerrar Sesion
+            </Link>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/lista-personajes" element={<ListaPersonajes />} />
+        <Route path="/about" element={<About />} />
+        
+      </Routes>
+    </Router>
+  );
+>>>>>>> Stashed changes
 }
