@@ -5,6 +5,9 @@ import rick from '../assets/img/rick.png'
 import morty from '../assets/img/morty.png'
 import rickcarcel1 from '../assets/img/Rickcarcel1.jpg'
 import portal from '../assets/img/portal.png'
+import { Link } from 'react-router-dom'
+import ListaPersonajes from './ListaPersonajes'
+import about from './About'
 
 
 export default function Inicio() {
@@ -18,8 +21,10 @@ export default function Inicio() {
             </div>
             <div className="col-4 botonstyle ">
                 <img className="w-100" src={logo} alt="logo"/>
-                <button className="btn btn-outline-info" type="submit">  
-                    Personajes
+                <button className="btn btn-outline-info"> 
+                <Link to="/lista-personajes" className="nav-link">
+              Personajes
+            </Link>
                 </button>
                 
             </div>
@@ -100,7 +105,11 @@ export default function Inicio() {
         </div>
         </div>
         <div className="text-center p-4">
-            <button className="btn btn-outline-info" type="submit">Acerca de Nosotros</button>
+            <button className="btn btn-outline-info" type="submit">
+            <Link to="/about" className="nav-link link">
+              Acerca de nosotros
+            </Link>
+            </button>
         </div>
         </section>
         </main>
