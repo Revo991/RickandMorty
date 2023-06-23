@@ -7,7 +7,7 @@ import rick from '../assets/img/rick.png'
 import morty from '../assets/img/morty.png'
 import rickcarcel1 from '../assets/img/Rickcarcel1.jpg'
 import portal from '../assets/img/portal.png'
-
+import { Link } from 'react-router-dom';
 
 export default function Inicio() {
     
@@ -21,7 +21,9 @@ export default function Inicio() {
             <div className="col-4 botonstyle ">
                 <img className="w-100" src={logo} alt="logo"/>
                 <button className="btn btn-outline-info" type="submit">  
-                    Personajes
+                <Link to="/personajes" > {/* Utiliza el componente Link para redirigir a "/personajes" */}
+              Personajes
+            </Link>
                 </button>
                 
             </div>

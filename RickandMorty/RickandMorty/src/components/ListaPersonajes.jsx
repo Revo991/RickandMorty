@@ -46,16 +46,12 @@ export default function ListaPersonajes() {
     const filteredPersonajes = personajesOriginales.filter((personaje) => {
       const nombreMatch =
         personaje.name.toLowerCase().includes(filtro.toLowerCase()) ||
-        personaje.id.toString() === filtro ||
-        personaje.species.toString() === filtro ||
-        personaje.location.name.toLowerCase() === filtro.toLowerCase();
+        String(personaje.id) === filtro ||
+        String(personaje.species) === filtro ||
+        String(personaje.location.name) === filtro;
 
       const estadoMatch =
-        estadoFiltro === ''
-          ? true
-          : estadoFiltro === 'Unknown'
-          ? personaje.status === 'unknown'
-          : personaje.status === estadoFiltro;
+        estadoFiltro === '' ? true : estadoFiltro === 'Unknown' ? personaje.status === 'unknown' : personaje.status === estadoFiltro;
 
       return nombreMatch && estadoMatch;
     });
@@ -74,9 +70,6 @@ export default function ListaPersonajes() {
   };
 
   const mostrarSinResultados = personajes.length === 0 && filtro !== '';
-
- 
-
 
   return (
     <div className="fondo">
