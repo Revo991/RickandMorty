@@ -98,9 +98,9 @@ export default function Inicio() {
         </div>
         </section>
         </main>
-        <footer class="p-3">
-        <div class="d-flex justify-content-center" >
-        <img class="foter-img" src={portal} alt=""/>
+        <footer className="p-3">
+        <div className="d-flex justify-content-center" >
+        <img className="foter-img" src={portal} alt=""/>
         </div>
         </footer>
         </div>
