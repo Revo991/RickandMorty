@@ -23,7 +23,6 @@ const {isAuthenticated}= useAuth0();
       )
     }
     
-     
     </>
   )
 }
