@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import pistola from '../assets/img/pistola de portal.png'
 import rickpistola from '../assets/img/rick-pistola.png'
@@ -29,7 +30,7 @@ export default function about() {
                             <p className='font-monospace'>
                                 Hola! soy Alisson, Estudiante de Kodigo del Bootcamp FSJ17, soy una apasionada programdora full stack y diseñadora web con una solida experiencia en la creacion de sitios web dinamicos y funcionales. <br />
                                 Tengo un amplio conocimiento de lenguajes y tecnologias web, como HTML, CSS, JAVASCRIPT y Frameworks como REACT y Frameworks de diseño como BOOTSTRAP y TAILWINDCSS y tengo conocimiento de programas de diseños como ILLUSTRATOR, PHOTOSHOP, FIGMA, entre otros. <br />
-                                <span className="fw-semibold">"En este proyecto mis tareas fueron hacer la maquetacion en figma y hacer todo el diseño del proyecto."</span>
+                                <span className="fw-semibold">En este proyecto mis tareas fueron hacer la maquetacion en figma y hacer todo el diseño del proyecto.</span>
                             </p>
                         </div>
                         <div className="col-md-4 order-md-1">

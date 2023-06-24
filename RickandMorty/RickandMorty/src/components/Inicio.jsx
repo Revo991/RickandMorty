@@ -10,6 +10,9 @@ import portal from '../assets/img/portal.png'
 import { Link } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
 import ListaPersonajes from './ListaPersonajes'
+// eslint-disable-next-line no-unused-vars
+import About from './About'
+
 export default function Inicio() {
     
     return (
@@ -21,11 +24,9 @@ export default function Inicio() {
             </div>
             <div className="col-4 botonstyle ">
                 <img className="w-100" src={logo} alt="logo"/>
-                <button className="btn btn-outline-info" type="submit">  
-                <Link to="/ListaPersonajes" > {/* Utiliza el componente Link para redirigir a "/personajes" */}
-              Personajes
+                <Link to="/ListaPersonajes" > 
+              <button className="btn btn-outline-info" type="submit"> Personajes </button>
             </Link>
-                </button>
                 
             </div>
             </div>
@@ -95,7 +96,9 @@ export default function Inicio() {
         
         </div>
         <div className="text-center p-4">
+            <Link to="/About">
             <button className="btn btn-outline-info" type="submit">Acerca de Nosotros</button>
+            </Link>
         </div>
         </section>
         </main>
