@@ -23,7 +23,7 @@ export default function about() {
                             <p className='font-monospace'>
                                 Hola! soy Alisson, Estudiante de Kodigo del Bootcamp FSJ17, soy una apasionada programdora full stack y diseñadora web con una solida experiencia en la creacion de sitios web dinamicos y funcionales. <br />
                                 Tengo un amplio conocimiento de lenguajes y tecnologias web, como HTML, CSS, JAVASCRIPT y Frameworks como REACT y Frameworks de diseño como BOOTSTRAP y TAILWINDCSS y tengo conocimiento de programas de diseños como ILLUSTRATOR, PHOTOSHOP, FIGMA, entre otros. <br />
-                                <span className="fw-semibold">En este proyecto mis tareas fueron hacer la maquetacion en figma y hacer todo el diseño del proyecto.</span>
+                                <span className="fw-semibold">"En este proyecto mis tareas fueron hacer la maquetacion en figma y hacer todo el diseño del proyecto."</span>
                             </p>
                         </div>
                         <div className="col-md-4 order-md-1">
@@ -58,7 +58,7 @@ export default function about() {
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
                             INFOR
-                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
+                                <span className="fw-semibold">"LO QUE HICISTE EN EL PROYECTO"</span>
                             </p>
                         </div>
                         <div className="col-md-4 order-md-1">
@@ -74,7 +74,7 @@ export default function about() {
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
                             INFOR
-                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
+                                <span className="fw-semibold">"LO QUE HICISTE EN EL PROYECTO"</span>
                             </p>
                         </div>
                         <div className="col-md-4 order-md-1">
@@ -92,7 +92,7 @@ export default function about() {
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
                             INFOR
-                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
+                                <span className="fw-semibold">"LO QUE HICISTE EN EL PROYECTO"</span>
                             </p>
                         </div>
                         <div className="col-md-4 order-md-1">
@@ -108,7 +108,7 @@ export default function about() {
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
                             INFOR
-                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
+                                <span className="fw-semibold">"LO QUE HICISTE EN EL PROYECTO"</span>
                             </p>
                         </div>
                         <div className="col-md-4 order-md-1">
@@ -126,7 +126,7 @@ export default function about() {
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
                             INFOR
-                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
+                                <span className="fw-semibold">"LO QUE HICISTE EN EL PROYECTO"</span>
                             </p>
                         </div>
                         <div className="col-md-4 order-md-1">
