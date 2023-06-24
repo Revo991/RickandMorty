@@ -25,8 +25,8 @@ export default function Inicio() {
             <div className="col-4 botonstyle ">
                 <img className="w-100" src={logo} alt="logo"/>
                 <Link to="/ListaPersonajes" > 
-              <button className="btn btn-outline-info" type="submit"> Personajes </button>
-            </Link>
+            <button className="btn btn-outline-info" type="submit"> Personajes </button>
+                </Link>
                 
             </div>
             </div>
