@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
@@ -9,26 +8,30 @@ export default function Perfil() {
 
   useEffect(() => {
     const storedFechaNacimiento = localStorage.getItem('fechaNacimiento');
+    const storedPersonaje = JSON.parse(localStorage.getItem('personaje'));
+
     if (storedFechaNacimiento) {
       setFechaNacimiento(storedFechaNacimiento);
     }
 
-    const obtenerPersonajeAleatorio = async () => {
-      try {
-        const response = await fetch('https://rickandmortyapi.com/api/character');
-        const data = await response.json();
-        const totalPages = data.info.pages;
-        const randomPage = Math.floor(Math.random() * totalPages) + 1;
-        const randomCharacter = await obtenerPersonajePorPagina(randomPage);
-        setPersonaje(randomCharacter);
-      } catch (error) {
-        console.error('Error al obtener el personaje aleatorio:', error);
-      }
-    };
+    if (storedPersonaje) {
+      setPersonaje(storedPersonaje);
+    }
+  }, []);
 
-    obtenerPersonajeAleatorio();
-
-  }, []); // <- Asegúrate de dejar el arreglo de dependencias vacío
+  const obtenerPersonajeAleatorio = async () => {
+    try {
+      const response = await fetch('https://rickandmortyapi.com/api/character');
+      const data = await response.json();
+      const totalPages = data.info.pages;
+      const randomPage = Math.floor(Math.random() * totalPages) + 1;
+      const randomCharacter = await obtenerPersonajePorPagina(randomPage);
+      setPersonaje(randomCharacter);
+      localStorage.setItem('personaje', JSON.stringify(randomCharacter));
+    } catch (error) {
+      console.error('Error al obtener el personaje aleatorio:', error);
+    }
+  };
 
   const obtenerPersonajePorPagina = async (page) => {
     try {
@@ -48,7 +51,6 @@ export default function Perfil() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // eslint-disable-next-line no-undef
     obtenerPersonajeAleatorio();
     localStorage.setItem('fechaNacimiento', fechaNacimiento);
   };
