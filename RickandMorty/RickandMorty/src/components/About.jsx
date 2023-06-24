@@ -1,28 +1,21 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import pistola from '../assets/img/pistola de portal.png'
-import rickpistola from '../assets/img/rick-pistola.png'
 import alisson from '../assets/img/IMG_6763.jpg'
+import jonathan from '../assets/img/jonathan.jpg'
 
 export default function about() {
   return (
     <div>
-      <div>
-        <img className="pistola" src={pistola} alt="#"/>
-    </div>
-    <div>
-        <img className="rick-pistola" src={rickpistola} alt="#"/>
-    </div>
       <header className="container">
-        <div className="text-center p-3 border-bottom  ">
+        <div className="text-center p-3 border-bottom ">
             <h1 className="font-monospace">NOSOTROS</h1>
         </div>
       </header>
 
     <main className="container">
         <section>
-            <div className="row g-5 p-3 border-bottom d-flex align-items-center">
-                <div className="col-6">
+            <div className="row g-5 p-2 border-bottom d-flex align-items-center">
+                <div className="col-12 col-md-5 col-lg-6">
                     <div className="row">
                         <div className="col-md-8 order-md-2">
                             <h3 className='font-monospace'>Alisson Lisbeth Serpas Martinez</h3>
@@ -39,99 +32,111 @@ export default function about() {
                     </div>
                 </div>
 
-                <div className="col-6">
-                    <section className="row">
-                        <section className="col-md-8 order-md-2">
-                            <h2 className='font-monospace'>NOMBRE</h2>
+                <div className="col-12 col-md-5 col-lg-6">
+                    <div className="row">
+                        <div className="col-md-8 order-md-2">
+                            <h3 className='font-monospace'>Jonathan Isaac Alfaro Merino</h3>
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, neque eius exercitationem architecto aut nulla necessitatibus aliquam distinctio et voluptas eos, facere ab autem dolor assumenda suscipit odit dolorem tenetur!
+                            ¡Hola! Soy Jonathan, un apasionado estudiante de programación frontend con experiencia en el desarrollo de proyectos utilizando React. Mi principal enfoque se encuentra en la creación de experiencias de usuario atractivas y funcionales a través de la implementación de tecnologías web modernas. <br />
+                            Con un conocimiento sólido en HTML, CSS y JavaScript, he trabajado en diversos proyectos que involucran la creación de interfaces interactivas y responsivas. Además, tengo experiencia en el uso de frameworks como Bootstrap para agilizar el proceso de desarrollo y mejorar la estética de mis proyectos. <br />
+                                <span className="fw-semibold">"En el proyecto, me encargué de crear los enlaces y el menú de navegación utilizando React Router."</span>
                             </p>
-                        </section>
-                        <section className="col-md-4 order-md-1">
-                            <img className="w-100 rounded" src="" alt="integrante 2"/>
-                        </section>
-                    </section>
+                        </div>
+                        <div className="col-md-4 order-md-1">
+                            <img className="w-100 rounded-5" src={jonathan} alt="integrante 2"/>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div className="row g-5 p-3 border-bottom d-flex align-items-center">
-                <div className="col-6">
-                    <section className="row">
-                        <section className="col-md-8 order-md-2">
-                            <h2 className='font-monospace'>NOMBRE</h2>
+            <div className="row g-5 p-2 border-bottom d-flex align-items-center">
+                <div className="col-12 col-md-5 col-lg-6">
+                    <div className="row">
+                    <div className="col-md-8 order-md-2">
+                            <h3 className='font-monospace'>NOMBRE</h3>
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, neque eius exercitationem architecto aut nulla necessitatibus aliquam distinctio et voluptas eos, facere ab autem dolor assumenda suscipit odit dolorem tenetur!
+                            INFOR
+                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
                             </p>
-                        </section>
-                        <section className="col-md-4 order-md-1">
+                        </div>
+                        <div className="col-md-4 order-md-1">
                             <img className="w-100 rounded-5" src="" alt="integrante 3"/>
-                        </section>
-                    </section>
+                        </div>
+                    </div>
                 </div>
-                <div className="col-6">
-                    <section className="row">
-                        <section className="col-md-8 order-md-2">
-                            <h2 className='font-monospace'>NOMBRE</h2>
+
+                <div className="col-12 col-md-5 col-lg-6">
+                    <div className="row">
+                        <div className="col-md-8 order-md-2">
+                            <h3 className='font-monospace'>NOMBRE</h3>
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, neque eius exercitationem architecto aut nulla necessitatibus aliquam distinctio et voluptas eos, facere ab autem dolor assumenda suscipit odit dolorem tenetur!
+                            INFOR
+                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
                             </p>
-                        </section>
-                        <section className="col-md-4 order-md-1">
-                            <img className="w-100 rounded" src="" alt="integrante 4"/>
-                        </section>
-                    </section>
+                        </div>
+                        <div className="col-md-4 order-md-1">
+                            <img className="w-100 rounded-5" src="" alt="integrante 4"/>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="row g-5 p-3 border-bottom d-flex align-items-center">
-                <div className="col-6">
-                    <section className="row">
-                        <section className="col-md-8 order-md-2">
-                            <h2 className='font-monospace'>NOMBRE</h2>
+
+            <div className="row g-5 p-2 border-bottom d-flex align-items-center">
+                <div className="col-12 col-md-5 col-lg-6">
+                    <div className="row">
+                    <div className="col-md-8 order-md-2">
+                            <h3 className='font-monospace'>NOMBRE</h3>
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, neque eius exercitationem architecto aut nulla necessitatibus aliquam distinctio et voluptas eos, facere ab autem dolor assumenda suscipit odit dolorem tenetur!
+                            INFOR
+                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
                             </p>
-                        </section>
-                        <section className="col-md-4 order-md-1">
+                        </div>
+                        <div className="col-md-4 order-md-1">
                             <img className="w-100 rounded-5" src="" alt="integrante 5"/>
-                        </section>
-                    </section>
+                        </div>
+                    </div>
                 </div>
-                <div className="col-6">
-                    <section className="row">
-                        <section className="col-md-8 order-md-2">
-                            <h2 className='font-monospace'>NOMBRE</h2>
+
+                <div className="col-12 col-md-5 col-lg-6">
+                    <div className="row">
+                        <div className="col-md-8 order-md-2">
+                            <h3 className='font-monospace'>NOMBRE</h3>
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, neque eius exercitationem architecto aut nulla necessitatibus aliquam distinctio et voluptas eos, facere ab autem dolor assumenda suscipit odit dolorem tenetur!
+                            INFOR
+                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
                             </p>
-                        </section>
-                        <section className="col-md-4 order-md-1">
-                            <img className="w-100 rounded" src="" alt="integrante 6"/>
-                        </section>
-                    </section>
+                        </div>
+                        <div className="col-md-4 order-md-1">
+                            <img className="w-100 rounded-5" src="" alt="integrante 6"/>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="row g-5 p-3 border-bottom d-flex align-items-center">
-                <div className="col-6">
-                    <section className="row">
-                        <section className="col-md-8 order-md-2">
-                            <h2 className='font-monospace'>NOMBRE</h2>
+
+            <div className="row g-5 p-2 border-bottom d-flex align-items-center">
+                <div className="col-12 col-md-5 col-lg-6">
+                    <div className="row">
+                    <div className="col-md-8 order-md-2">
+                            <h3 className='font-monospace'>NOMBRE</h3>
                             <h6 className="text-info font-monospace">Frontend Developer</h6>
                             <p className='font-monospace'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, neque eius exercitationem architecto aut nulla necessitatibus aliquam distinctio et voluptas eos, facere ab autem dolor assumenda suscipit odit dolorem tenetur!
+                            INFOR
+                                <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
                             </p>
-                        </section>
-                  
-                        <section className="col-md-4 order-md-1">
+                        </div>
+                        <div className="col-md-4 order-md-1">
                             <img className="w-100 rounded-5" src="" alt="integrante 7"/>
-                        </section>
-                    </section>
+                        </div>
+                    </div>
                 </div>
-                </div>
+
+            </div>
+
         </section>
     </main>
 
