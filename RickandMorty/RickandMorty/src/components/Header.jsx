@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Inicio from './Inicio';
 import ListaPersonajes from './ListaPersonajes';
 import About from './About';
+import LogOut from './LogOut';
+import Perfil from './Perfil';
+
 
 export default function Header() {
   return (
@@ -40,14 +43,21 @@ export default function Header() {
               Nosotros
             </Link>
           </li>
+          <li className="nav-item fondo-nav">
+              <Link to="/Perfil" className="nav-link link">
+                Perfil Usuario
+              </Link>
+          </li>
         </ul>
         <div className='ms-auto'>
         <ul className='navbar-nav font-monospace'>
         <li className='nav-item fondo-nav'>
           <Link to="/" className="nav-link link">
-              Cerrar Sesion
+          <LogOut />
             </Link>
           </li>
+          
+          
         </ul>
         </div>
       </div>
@@ -60,7 +70,7 @@ export default function Header() {
         <Route path="/" element={<Inicio />} />
         <Route path="/listaPersonajes" element={<ListaPersonajes />} />
         <Route path="/About" element={<About />} />
-        
+        <Route path='/Perfil' element={<Perfil />}/>
       </Routes>
     </Router>
   );
