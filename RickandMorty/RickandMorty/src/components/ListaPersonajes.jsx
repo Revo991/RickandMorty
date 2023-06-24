@@ -100,9 +100,10 @@ export default function ListaPersonajes() {
       </div>
       </div>
 
-      <div className="row ">
+      <div className="container">
+        <div className='row gx-5 '>
         {personajes.map((personaje) => (
-          <div className="col-12 col-lg-4 col-sm-5 mb-5" key={personaje.id}>
+          <div className="col-10 col-md-6 col-lg-4" key={personaje.id}>
             <CardPersonajes
               id={personaje.id}
               name={personaje.name}
@@ -118,6 +119,7 @@ export default function ListaPersonajes() {
           </div>
         ))}
       </div >
+        </div>
       <div>
       {mostrarSinResultados && <div className='text-white p-4 '>No se encontraron resultados.</div>}
       </div>

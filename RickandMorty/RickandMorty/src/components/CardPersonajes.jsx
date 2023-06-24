@@ -34,10 +34,8 @@ export default function CardPersonajes({
   };
 
   return (
-    <div className="container my-4">
-      <div className="row">
-        <div className="col-lg-4 col-md-6">
-          <div className="card mb-5 fondo-card rounded-5 animacion" style={{ width: '23rem' }}>
+    <div className="container my-3">
+          <div className="card mb-5 fondo-card rounded-5" style={{ width: '21rem' }}>
             <div className='m-3 text-center '>
             <img src={image} className="w-75 border border-5 border-success rounded-circle" alt={name} />
             </div>
@@ -76,7 +74,5 @@ export default function CardPersonajes({
             </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 }

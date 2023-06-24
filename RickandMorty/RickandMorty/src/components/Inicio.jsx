@@ -20,7 +20,7 @@ export default function Inicio() {
             <div className="container text-center">
             <div className="row">
             <div className="col-8">
-                <img src={rickandmorty} alt="rickandmortyportal"/>
+                <img className='w-100' src={rickandmorty} alt="rickandmortyportal"/>
             </div>
             <div className="col-4 botonstyle ">
                 <img className="w-100" src={logo} alt="logo"/>
