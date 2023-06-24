@@ -8,7 +8,8 @@ import morty from '../assets/img/morty.png'
 import rickcarcel1 from '../assets/img/Rickcarcel1.jpg'
 import portal from '../assets/img/portal.png'
 import { Link } from 'react-router-dom';
-
+// eslint-disable-next-line no-unused-vars
+import ListaPersonajes from './ListaPersonajes'
 export default function Inicio() {
     
     return (
@@ -21,7 +22,7 @@ export default function Inicio() {
             <div className="col-4 botonstyle ">
                 <img className="w-100" src={logo} alt="logo"/>
                 <button className="btn btn-outline-info" type="submit">  
-                <Link to="/personajes" > {/* Utiliza el componente Link para redirigir a "/personajes" */}
+                <Link to="/ListaPersonajes" > {/* Utiliza el componente Link para redirigir a "/personajes" */}
               Personajes
             </Link>
                 </button>

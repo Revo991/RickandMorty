@@ -31,7 +31,7 @@ export default function Header() {
             </Link>
           </li>
           <li className="nav-item fondo-nav">
-            <Link to="/lista-personajes" className="nav-link link">
+            <Link to="/listaPersonajes" className="nav-link link">
               Personajes
             </Link>
           </li>
@@ -58,7 +58,7 @@ export default function Header() {
 
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/lista-personajes" element={<ListaPersonajes />} />
+        <Route path="/listaPersonajes" element={<ListaPersonajes />} />
         <Route path="/about" element={<About />} />
         
       </Routes>
