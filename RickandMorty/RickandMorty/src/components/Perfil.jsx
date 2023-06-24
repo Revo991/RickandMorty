@@ -7,18 +7,28 @@ export default function Perfil() {
   const [fechaNacimiento, setFechaNacimiento] = useState('');
   const [personaje, setPersonaje] = useState(null);
 
-  const obtenerPersonajeAleatorio = async () => {
-    try {
-      const response = await fetch('https://rickandmortyapi.com/api/character');
-      const data = await response.json();
-      const totalPages = data.info.pages;
-      const randomPage = Math.floor(Math.random() * totalPages) + 1;
-      const randomCharacter = await obtenerPersonajePorPagina(randomPage);
-      setPersonaje(randomCharacter);
-    } catch (error) {
-      console.error('Error al obtener el personaje aleatorio:', error);
+  useEffect(() => {
+    const storedFechaNacimiento = localStorage.getItem('fechaNacimiento');
+    if (storedFechaNacimiento) {
+      setFechaNacimiento(storedFechaNacimiento);
     }
-  };
+
+    const obtenerPersonajeAleatorio = async () => {
+      try {
+        const response = await fetch('https://rickandmortyapi.com/api/character');
+        const data = await response.json();
+        const totalPages = data.info.pages;
+        const randomPage = Math.floor(Math.random() * totalPages) + 1;
+        const randomCharacter = await obtenerPersonajePorPagina(randomPage);
+        setPersonaje(randomCharacter);
+      } catch (error) {
+        console.error('Error al obtener el personaje aleatorio:', error);
+      }
+    };
+
+    obtenerPersonajeAleatorio();
+
+  }, []); // <- Asegúrate de dejar el arreglo de dependencias vacío
 
   const obtenerPersonajePorPagina = async (page) => {
     try {
@@ -38,7 +48,9 @@ export default function Perfil() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // eslint-disable-next-line no-undef
     obtenerPersonajeAleatorio();
+    localStorage.setItem('fechaNacimiento', fechaNacimiento);
   };
 
   return (
