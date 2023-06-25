@@ -57,22 +57,23 @@ export default function Perfil() {
 
   return (
     isAuthenticated && (
-      <div className="bg-dark text-white text-center">
+      <div className="fondo p-5 text-white text-center font-monospace fs-5">
         <div className="container">
-          <h2>Usuario: {user.name}</h2>
+          <h2 >Usuario: {user.name}</h2>
           <p>Correo: {user.email}</p>
           <form onSubmit={handleSubmit}>
             <label htmlFor="fechaNacimiento">Fecha de Nacimiento:</label>
             <input
+              className='bg-info text-white font-monospace'
               type="date"
               id="fechaNacimiento"
               value={fechaNacimiento}
               onChange={handleFechaNacimientoChange}
             />
             {fechaNacimiento && (
-              <div>
-                <button type="submit">Ver Personaje</button>
-                <p>Fecha de nacimiento seleccionada: {fechaNacimiento}</p>
+              <div className='p-3'>
+                <button className='btn btn-outline-info' type="submit">Ver Personaje</button>
+                <p className='p-3'>Fecha de nacimiento seleccionada: {fechaNacimiento}</p>
               </div>
             )}
           </form>
