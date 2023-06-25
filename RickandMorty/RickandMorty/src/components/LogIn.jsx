@@ -1,15 +1,12 @@
 // eslint-disable-next-line no-unused-vars
+import React, { useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import mortygif from '../assets/img/morty-gif.gif';
 
-// eslint-disable-next-line no-unused-vars
-import React, { useEffect } from 'react';
-
-export default function LogIn() {
+const LogIn = () => {
   const { loginWithRedirect } = useAuth0();
 
   useEffect(() => {
-    // Agregar la regla CSS para ocultar el desplazamiento horizontal
     document.body.style.overflowX = 'hidden';
   }, []);
 
@@ -30,4 +27,6 @@ export default function LogIn() {
       </div>
     </main>
   );
-}
+};
+
+export default LogIn;
