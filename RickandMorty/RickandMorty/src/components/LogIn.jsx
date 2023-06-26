@@ -16,9 +16,11 @@ const LogIn = () => {
         <div className="col-lg-8 col-md-6 d-flex">
           <img src={mortygif} alt="portal" className="w-100" />
         </div>
-        <div className="col-lg-4 col-md-6 d-flex ">
-          <div className="text-center">
-            <h2 className="text-white">BIENVENIDOS</h2>
+        <div className="col-lg-4 col-md-6 d-flex my-auto">
+          <div className="text-center ">
+           
+            <h2 className="text-white ">BIENVENIDOS</h2>
+            
             <button className="btn btn-primary mt-3" onClick={() => loginWithRedirect()}>
               Iniciar Sesión
             </button>

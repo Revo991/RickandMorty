@@ -2,17 +2,32 @@
 import React from 'react'
 import alisson from '../assets/img/IMG_6763.jpg'
 import jonathan from '../assets/img/jonathan.jpg'
+import justin from '../assets/img/justin.jpg'
+import { createContext, useContext } from 'react'
+
+const ThemeContext = createContext(null)
+
+
 
 export default function about() {
     return (
-    <div>
+    <ThemeContext.Provider value="dark">
+        <Nosotros/>
+    </ThemeContext.Provider>
+    )
+}
+
+function Nosotros(){
+    return(
+        <div>
     <header className="container">
     <div className="text-center p-3 border-bottom ">
     <h1 className="font-monospace">NOSOTROS</h1>
     </div>
     </header>
 
-    <main className="container">
+ <BackGround >
+    
     <section>
     <div className="row g-5 p-2 border-bottom d-flex align-items-center">
     <div className="col-12 col-md-5 col-lg-6">
@@ -54,15 +69,15 @@ export default function about() {
     <div className="col-12 col-md-5 col-lg-6">
     <div className="row">
     <div className="col-md-8 order-md-2">
-    <h3 className='font-monospace'>NOMBRE</h3>
+    <h3 className='font-monospace'>Justin José Amaya Rojas</h3>
     <h6 className="text-info font-monospace">Frontend Developer</h6>
     <p className='font-monospace'>
-        INFOR
-    <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
+        Soy Justin Amaya, un estudiante con altos conocimientos en HTML, CSS, JavaScript y Bootstrap.
+    <span className="fw-semibold">En este proyecto me encargue en utilizar el hook useContext y en hacer pequeños cambios en el diseño del sitio</span>
     </p>
     </div>
     <div className="col-md-4 order-md-1">
-    <img className="w-100 rounded-5" src="" alt="integrante 3"/>
+    <img className="w-100 rounded-5" src={justin} alt="integrante 3"/>
     </div>
     </div>
     </div>
@@ -138,8 +153,20 @@ export default function about() {
     </div>
 
     </section>
-    </main>
+    
+    </BackGround>
 
     </div>
+    )
+}
+
+function BackGround({title, children}){
+    const theme = useContext(ThemeContext);
+    const mmm = 'background-' + theme;
+    return(
+<main className={mmm}>
+    
+    {children}
+</main>
     )
 }
