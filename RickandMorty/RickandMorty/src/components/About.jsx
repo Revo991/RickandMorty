@@ -68,74 +68,7 @@ export default function about() {
     </div>
     </div>
 
-    <div className="col-12 col-md-5 col-lg-6">
-    <div className="row">
-    <div className="col-md-8 order-md-2">
-    <h3 className='font-monospace'>NOMBRE</h3>
-    <h6 className="text-info font-monospace">Frontend Developer</h6>
-    <p className='font-monospace'>
-                            INFOR
-    <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
-    </p>
-    </div>
-    <div className="col-md-4 order-md-1">
-    <img className="w-100 rounded-5" src="" alt="integrante 4"/>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <div className="row g-5 p-2 border-bottom d-flex align-items-center">
-    <div className="col-12 col-md-5 col-lg-6">
-    <div className="row">
-    <div className="col-md-8 order-md-2">
-    <h3 className='font-monospace'>NOMBRE</h3>
-    <h6 className="text-info font-monospace">Frontend Developer</h6>
-    <p className='font-monospace'>
-                            INFOR
-    <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
-    </p>
-    </div>
-    <div className="col-md-4 order-md-1">
-    <img className="w-100 rounded-5" src="" alt="integrante 5"/>
-    </div>
-    </div>
-    </div>
-
-    <div className="col-12 col-md-5 col-lg-6">
-    <div className="row">
-    <div className="col-md-8 order-md-2">
-    <h3 className='font-monospace'>NOMBRE</h3>
-    <h6 className="text-info font-monospace">Frontend Developer</h6>
-    <p className='font-monospace'>
-                            INFOR
-    <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
-    </p>
-    </div>
-    <div className="col-md-4 order-md-1">
-    <img className="w-100 rounded-5" src="" alt="integrante 6"/>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <div className="row g-5 p-2 border-bottom d-flex align-items-center">
-    <div className="col-12 col-md-5 col-lg-6">
-    <div className="row">
-    <div className="col-md-8 order-md-2">
-    <h3 className='font-monospace'>NOMBRE</h3>
-    <h6 className="text-info font-monospace">Frontend Developer</h6>
-    <p className='font-monospace'>
-                            INFOR
-    <span className="fw-semibold">LO QUE HICISTE EN EL PROYECTO</span>
-    </p>
-    </div>
-    <div className="col-md-4 order-md-1">
-    <img className="w-100 rounded-5" src="" alt="integrante 7"/>
-    </div>
-    </div>
-    </div>
-
+    
     </div>
 
     </section>
