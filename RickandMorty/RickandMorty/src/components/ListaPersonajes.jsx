@@ -16,7 +16,7 @@ export default function ListaPersonajes() {
       let allPersonajes = [];
       let page = 1;
 
-      while (allPersonajes.length < 826) {
+      while (allPersonajes.length < 500) {
         const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${page}`);
         const data = response.data;
         allPersonajes = allPersonajes.concat(data.results);

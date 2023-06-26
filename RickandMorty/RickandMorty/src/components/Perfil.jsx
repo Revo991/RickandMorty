@@ -65,7 +65,7 @@ export default function Perfil() {
                 <h2 >Usuario: {user.name}</h2>
                 <p>Correo: {user.email}</p>
                 <form onSubmit={handleSubmit}>
-                  <label htmlFor="fechaNacimiento" className=''></label>
+                  <label htmlFor="fechaNacimiento" className=''>Ingresa tu Fecha de nacimiento</label>
                   <input
                     className='text-white fs-bold  btn btn-outline-info'
                     type="date"
