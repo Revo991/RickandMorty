@@ -58,37 +58,43 @@ export default function Perfil() {
 
   return (
     isAuthenticated && (
-      <div className="fondo p-5 text-white text-center font-monospace fs-5">
-        <div className="container">
-          <h2 >Usuario: {user.name}</h2>
-          <p>Correo: {user.email}</p>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="fechaNacimiento">Fecha de Nacimiento:</label>
-            <input
-              className='bg-info text-white font-monospace'
-              type="date"
-              id="fechaNacimiento"
-              value={fechaNacimiento}
-              onChange={handleFechaNacimientoChange}
-            />
-            {fechaNacimiento && (
-              <div className='p-3'>
-                <button className='btn btn-outline-info' type="submit">Ver Personaje</button>
-                <p className='p-3'>Fecha de nacimiento seleccionada: {fechaNacimiento}</p>
+      <main className='fondo p-5  '>
+         <div class="container fs-3  ">
+            <div class="row text-white ">
+              <div class=" col-md-5 col-lg-6">
+                <h2 >Usuario: {user.name}</h2>
+                <p>Correo: {user.email}</p>
+                <form onSubmit={handleSubmit}>
+                  <label htmlFor="fechaNacimiento">Fecha de Nacimiento:</label>
+                  <input
+                    className='bg-info text-white font-monospace'
+                    type="date"
+                    id="fechaNacimiento"
+                    value={fechaNacimiento}
+                    onChange={handleFechaNacimientoChange}
+                  />
+                  {fechaNacimiento && (
+                    <div className='p-3'>
+                      <button className='btn btn-outline-info' type="submit">Ver Personaje</button>
+                      <p className=''>Fecha de nacimiento seleccionada: {fechaNacimiento}</p>
+                    </div>
+                  )}
+                </form>
               </div>
-            )}
-          </form>
-          {personaje && (
-            <div>
-              <h3>Según tu fecha de nacimiento, eres:</h3>
-              <img src={personaje.image} alt={personaje.name} />
-              <p>Nombre: {personaje.name}</p>
-              <p>Especie: {personaje.species}</p>
-              <p>Género: {personaje.gender}</p>
+              <div class=" col-md-5 col-lg-6">
+                {personaje && (
+                    <div>
+                      <h3>Según tu fecha de nacimiento, eres:</h3>
+                      <img src={personaje.image} alt={personaje.name} />
+                      <p>Nombre: {personaje.name}</p>
+                      <p>Especie: {personaje.species}</p>
+                      <p>Género: {personaje.gender}</p>
+                    </div>
+                  )}
+              </div>
             </div>
-          )}
-        </div>
-      </div>
+          </div>
+      </main>
     )
   );
 }
