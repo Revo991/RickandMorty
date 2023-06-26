@@ -33,7 +33,7 @@ export default function about() {
     </div>
     </div>
 
-    <div className="col-12 col-md-5 col-lg-6">
+    <div className="col-12 col-md-5 col-lg-6 ">
     <div className="row">
     <div className="col-md-8 order-md-2">
     <h3 className='font-monospace natural'>Jonathan Isaac Alfaro Merino</h3>
@@ -58,7 +58,7 @@ export default function about() {
     <h3 className='font-monospace natural'>Rafael Ernesto Revolorio Reyes</h3>
     <h6 className="text-info font-monospace">Frontend Developer</h6>
     <p className='font-monospace text-white'>
-    Hola! soy Rafael , un apasionado estudiante de programación frontend con experiencia en el desarrollo de proyectos utilizando React.Mi principal enfoque se encuentra en la creación de experiencias de usuario atractivas y funcionales a través de la implementación de tecnologías web modernas.   <br />Tengo un amplio conocimiento de lenguajes y tecnologias web, como HTML, CSS, JAVASCRIPT y Frameworks como REACT y Frameworks de diseño como BOOTSTRAP, tengo conocimiento de programas de diseños como ILLUSTRATOR, PHOTOSHOP, PREMIERE PRO, además, tengo conocimientos en el uso de herramientas como Auth0 para la autenticación y autorización de usuarios en aplicaciones web.
+    Hola! soy Rafael , un  Estudiante de Kodigo del Bootcamp Full Stack. Mi principal enfoque se encuentra en la creación de experiencias de usuario atractivas y funcionales a través de la implementación de tecnologías web modernas.   <br />Tengo un amplio conocimiento de lenguajes y tecnologias web, como HTML, CSS, JAVASCRIPT y Frameworks como REACT y Frameworks de diseño como BOOTSTRAP, tengo conocimiento de programas de diseños como ILLUSTRATOR, PHOTOSHOP, PREMIERE PRO, además, tengo conocimientos en el uso de herramientas como Auth0 para la autenticación y autorización de usuarios en aplicaciones web.
     <span className="fw-semibold ">En el proyecto, fui responsable de crear el código de la API y el sistema de perfiles de usuario. Además, colaboré en el diseño  y personalicé el servicio de autenticación Auth0.</span>
     </p>
     </div>
