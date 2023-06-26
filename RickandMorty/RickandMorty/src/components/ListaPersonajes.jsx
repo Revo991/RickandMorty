@@ -75,7 +75,7 @@ export default function ListaPersonajes() {
     <div className="fondo">
       <div className='container'>
         <div className='d-flex justify-content-center'>
-          <img className='logo-psj' src={logo} alt="logo"/>
+          <img className='logo-psj w-50' src={logo} alt="logo"/>
         </div>
       <div className='py-4'>
         <h2 className='text-white fs-2 fw-semibold font-monospace'>Todos los personajes</h2>
