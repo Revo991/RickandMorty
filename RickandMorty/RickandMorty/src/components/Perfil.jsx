@@ -65,7 +65,7 @@ export default function Perfil() {
                 <h2 >Usuario: {user.name}</h2>
                 <p>Correo: {user.email}</p>
                 <form onSubmit={handleSubmit}>
-                  <label htmlFor="fechaNacimiento" className=''>Fecha de Nacimiento:</label>
+                  <label htmlFor="fechaNacimiento" className=''></label>
                   <input
                     className='text-white fs-bold  btn btn-outline-info'
                     type="date"
@@ -88,7 +88,7 @@ export default function Perfil() {
                       <img src={personaje.image} alt={personaje.name} />
                       <p>Nombre: {personaje.name}</p>
                       <p>Especie: {personaje.species}</p>
-                      <p>Género: {personaje.gender}</p>
+                      <p>Estatus: {personaje.status}</p>
                     </div>
                   )}
               </div>
