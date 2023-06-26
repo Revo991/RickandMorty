@@ -81,7 +81,7 @@ export default function ListaPersonajes() {
         <h2 className='text-white fs-2 fw-semibold font-monospace'>Todos los personajes</h2>
       </div>
 
-      <div>
+      <div className=''>
       <div className=' d-flex justify-content-around '>
         <div>
         <label className='text-white fs-4 font-monospace ' htmlFor="estadoFiltro">Estado:</label>
@@ -93,7 +93,7 @@ export default function ListaPersonajes() {
         </select>
         </div>
         <div>
-        <input className='border rounded-pill bg-white font-monospace' type="text" value={filtro} onChange={handleNombreChange} placeholder="Buscar personaje" />
+        <input className='border rounded-pill bg-white font-monospace ' type="text" value={filtro} onChange={handleNombreChange} placeholder="Buscar personaje" />
         <button className="btn btn-outline-info rounded-pill ms-3"  onClick={searchPersonaje}>Buscar</button>
         <button className="btn btn-outline-info rounded-pill ms-2" onClick={resetPersonajes}>Restablecer</button>
       </div>  
