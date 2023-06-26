@@ -59,15 +59,15 @@ export default function Perfil() {
   return (
     isAuthenticated && (
       <main className='fondo p-5  '>
-         <div class="container fs-3  ">
-            <div class="row text-white ">
-              <div class=" col-md-5 col-lg-6">
+         <div className="container fs-3  ">
+            <div className="row text-white ">
+              <div className=" col-md-5 col-lg-6">
                 <h2 >Usuario: {user.name}</h2>
                 <p>Correo: {user.email}</p>
                 <form onSubmit={handleSubmit}>
-                  <label htmlFor="fechaNacimiento">Fecha de Nacimiento:</label>
+                  <label htmlFor="fechaNacimiento" className=''>Fecha de Nacimiento:</label>
                   <input
-                    className='bg-info text-white font-monospace'
+                    className='text-white fs-bold  btn btn-outline-info'
                     type="date"
                     id="fechaNacimiento"
                     value={fechaNacimiento}
@@ -76,14 +76,14 @@ export default function Perfil() {
                   {fechaNacimiento && (
                     <div className='p-3'>
                       <button className='btn btn-outline-info' type="submit">Ver Personaje</button>
-                      <p className=''>Fecha de nacimiento seleccionada: {fechaNacimiento}</p>
+                      <p className=''>Fecha de nacimiento : {fechaNacimiento}</p>
                     </div>
                   )}
                 </form>
               </div>
-              <div class=" col-md-5 col-lg-6">
+              <div className=" col-md-5 col-lg-6">
                 {personaje && (
-                    <div>
+                    <div >
                       <h3>Según tu fecha de nacimiento, eres:</h3>
                       <img src={personaje.image} alt={personaje.name} />
                       <p>Nombre: {personaje.name}</p>
