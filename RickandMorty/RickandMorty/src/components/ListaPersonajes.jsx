@@ -142,15 +142,15 @@ export default function ListaPersonajes() {
           <nav aria-label="Navegación de páginas">
             <ul className="pagination">
               <li className={`page-item ${paginaActual === 1 ? 'disabled' : ''}`}>
-                <button className="page-link" onClick={handlePaginaAnterior}>
+                <button className=" btn btn-outline-info" onClick={handlePaginaAnterior}>
                   Anterior
                 </button>
               </li>
               <li className="page-item active">
-                <button className="page-link">{paginaActual}</button>
+                <button className="btn btn-outline-info ">{paginaActual}</button>
               </li>
               <li className={`page-item ${paginaActual === 17 ? 'disabled' : ''}`}>
-                <button className="page-link" onClick={handlePaginaSiguiente}>
+                <button className=" btn btn-outline-info" onClick={handlePaginaSiguiente}>
                   Siguiente
                 </button>
               </li>
