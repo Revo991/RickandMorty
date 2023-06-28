@@ -10,14 +10,14 @@ export default function ListaPersonajes() {
   const [estadoFiltro, setEstadoFiltro] = useState('');
   const [personajesOriginales, setPersonajesOriginales] = useState([]);
   const [paginaActual, setPaginaActual] = useState(1);
-  const personajesPorPagina = 100;
+  const personajesPorPagina = 50;
 
   const getPersonajes = async () => {
     try {
       let allPersonajes = [];
       let page = 1;
 
-      while (allPersonajes.length < 800) {
+      while (allPersonajes.length < 826) {
         const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${page}`);
         const data = response.data;
         allPersonajes = allPersonajes.concat(data.results);
@@ -55,7 +55,9 @@ export default function ListaPersonajes() {
         personaje.name.toLowerCase().includes(filtro.toLowerCase()) ||
         String(personaje.id) === filtro ||
         String(personaje.species) === filtro ||
-        String(personaje.location.name) === filtro;
+        String(personaje.location.name) === filtro ||
+        String(personaje.type) === filtro ||
+        String(personaje.origin.name) === filtro;
 
       const estadoMatch =
         estadoFiltro === '' ? true : estadoFiltro === 'Unknown' ? personaje.status === 'unknown' : personaje.status === estadoFiltro;
@@ -147,7 +149,7 @@ export default function ListaPersonajes() {
               <li className="page-item active">
                 <button className="page-link">{paginaActual}</button>
               </li>
-              <li className={`page-item ${paginaActual === 8 ? 'disabled' : ''}`}>
+              <li className={`page-item ${paginaActual === 17 ? 'disabled' : ''}`}>
                 <button className="page-link" onClick={handlePaginaSiguiente}>
                   Siguiente
                 </button>
