@@ -19,7 +19,7 @@ const LogIn = () => {
         <div className="col-lg-4 col-md-6 d-flex my-auto">
           <div className="text-center ">
            
-            <h2 className="text-white ">BIENVENIDOS</h2>
+            <h2 className="text-white font-monospace ">BIENVENIDOS</h2>
             
             <button className="btn btn-primary mt-3" onClick={() => loginWithRedirect()}>
               Iniciar Sesión
