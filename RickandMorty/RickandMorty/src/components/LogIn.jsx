@@ -11,19 +11,19 @@ const LogIn = () => {
   }, []);
 
   return (
-    <main className="fondo-2" style={{ minHeight: '100vh' }}>
-      <div className="row h-100">
-        <div className="col-lg-8 col-md-6 d-flex">
-          <img src={mortygif} alt="portal" className="w-100" />
-        </div>
-        <div className="col-lg-4 col-md-6 d-flex my-auto">
-          <div className="text-center ">
-           
-            <h2 className="text-white font-monospace ">BIENVENIDOS</h2>
-            
-            <button className="btn btn-primary mt-3" onClick={() => loginWithRedirect()}>
-              Iniciar Sesión
-            </button>
+    <main className="fondo-2" style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8 col-md-6 d-flex justify-content-center justify-content-md-end">
+            <img src={mortygif} alt="portal" className="w-100" />
+          </div>
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center justify-content-md-start my-auto">
+            <div className="text-center">
+              <h2 className="text-white font-monospace">BIENVENIDOS</h2>
+              <button className="btn btn-primary mt-3" onClick={() => loginWithRedirect()}>
+                Iniciar Sesión
+              </button>
+            </div>
           </div>
         </div>
       </div>

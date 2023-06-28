@@ -103,7 +103,7 @@ export default function ListaPersonajes() {
         </div>
 
         <div className="">
-          <div className="d-flex justify-content-around ">
+          <div className="d-flex justify-content-around flex-column flex-md-row align-items-start">
             <div>
               <label className="text-white fs-4 font-monospace " htmlFor="estadoFiltro">
                 Estado:
@@ -120,9 +120,9 @@ export default function ListaPersonajes() {
                 <option value="Unknown">Desconocido</option>
               </select>
             </div>
-            <div>
+            <div className="mt-3 mt-md-0">
               <input
-                className="border rounded-pill bg-white font-monospace "
+                className="border rounded-pill bg-white font-monospace"
                 type="text"
                 value={filtro}
                 onChange={handleNombreChange}
@@ -142,22 +142,21 @@ export default function ListaPersonajes() {
           <nav aria-label="Navegación de páginas">
             <ul className="pagination">
               <li className={`page-item ${paginaActual === 1 ? 'disabled' : ''}`}>
-                <button className=" btn btn-outline-info" onClick={handlePaginaAnterior}>
+                <button className=" btn natural2 btn-outline-info" onClick={handlePaginaAnterior}>
                   Anterior
                 </button>
               </li>
               <li className="page-item active">
-                <button className="btn btn-outline-info ">{paginaActual}</button>
+                <button className="btn natural2 btn-outline-info ">{paginaActual}</button>
               </li>
               <li className={`page-item ${paginaActual === 17 ? 'disabled' : ''}`}>
-                <button className=" btn btn-outline-info" onClick={handlePaginaSiguiente}>
+                <button className=" btn natural2 btn-outline-info" onClick={handlePaginaSiguiente}>
                   Siguiente
                 </button>
               </li>
             </ul>
           </nav>
         </div>
-
 
         <div className="container">
           <div className="row gx-5 ">
@@ -179,8 +178,6 @@ export default function ListaPersonajes() {
             ))}
           </div>
         </div>
-
-        
 
         <div>{mostrarSinResultados && <div className="text-white p-4">No se encontraron resultados.</div>}</div>
       </div>
