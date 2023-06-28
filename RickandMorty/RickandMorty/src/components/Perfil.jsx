@@ -67,7 +67,7 @@ export default function Perfil() {
               <form onSubmit={handleSubmit}>
                 <label htmlFor="fechaNacimiento">Fecha de Nacimiento:</label>
                 <input
-                  className='text-white fs-bold btn btn-outline-info'
+                  className='btn natural2 btn-outline-info'
                   type="date"
                   id="fechaNacimiento"
                   value={fechaNacimiento}
