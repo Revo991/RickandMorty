@@ -23,7 +23,7 @@ export default function Header() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon natural2"></span>
         </button>
 
       <div className="collapse navbar-collapse" id="navbarNav">
