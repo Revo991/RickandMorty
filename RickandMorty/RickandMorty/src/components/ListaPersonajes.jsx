@@ -178,25 +178,7 @@ export default function ListaPersonajes() {
           </div>
         </div>
 
-        <div className="d-flex justify-content-center mt-4">
-          <nav aria-label="Navegación de páginas">
-            <ul className="pagination">
-              <li className={`page-item ${paginaActual === 1 ? 'disabled' : ''}`}>
-                <button className="page-link" onClick={handlePaginaAnterior}>
-                  Anterior
-                </button>
-              </li>
-              <li className="page-item active">
-                <button className="page-link">{paginaActual}</button>
-              </li>
-              <li className={`page-item ${paginaActual === 8 ? 'disabled' : ''}`}>
-                <button className="page-link" onClick={handlePaginaSiguiente}>
-                  Siguiente
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        
 
         <div>{mostrarSinResultados && <div className="text-white p-4">No se encontraron resultados.</div>}</div>
       </div>
